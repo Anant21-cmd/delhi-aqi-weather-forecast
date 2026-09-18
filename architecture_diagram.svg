@@ -1,0 +1,623 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 2200" width="100%" height="100%" style="background-color: #F8FAFC; font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Shadow Filters -->
+    <filter id="card-shadow" x="-4%" y="-2%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <filter id="core-shadow" x="-5%" y="-3%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284C7" flood-opacity="0.18"/>
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3F7A"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="core-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0F3F7A"/>
+    </linearGradient>
+    <linearGradient id="accent-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="accent-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    
+    <!-- Arrow Markers -->
+    <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284C7"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1400" height="2200" fill="#F8FAFC"/>
+  
+  <!-- Subtle Header Banner Pattern -->
+  <rect x="0" y="0" width="1400" height="130" fill="url(#header-grad)"/>
+  
+  <!-- Top Application Banner -->
+  <g transform="translate(60, 28)">
+    <!-- Department Badge -->
+    <rect x="0" y="0" width="310" height="22" rx="11" fill="rgba(255,255,255,0.18)"/>
+    <text x="15" y="15" fill="#E0F2FE" font-size="11" font-weight="700" letter-spacing="0.5">MINISTRY OF EARTH SCIENCES (MoES) &bull; NCMRWF</text>
+    
+    <text x="0" y="52" fill="#FFFFFF" font-size="25" font-weight="800" letter-spacing="-0.5">Air Pollution–Weather Coupled Forecasting System</text>
+    <text x="0" y="75" fill="#BAE6FD" font-size="14" font-weight="600">Delhi NCR High-Resolution Environmental Intelligence Platform (SIH26082)</text>
+  </g>
+  <g transform="translate(1120, 42)">
+    <rect x="0" y="0" width="220" height="46" rx="8" fill="#FFFFFF" filter="url(#card-shadow)"/>
+    <circle cx="24" cy="23" r="8" fill="#10B981"/>
+    <text x="40" y="20" fill="#0F172A" font-size="12" font-weight="700">System Architecture</text>
+    <text x="40" y="34" fill="#64748B" font-size="10" font-weight="600">End-to-End Operational Pipeline</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 1: DATA SOURCES -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 160)">
+    <!-- Section Title -->
+    <rect x="0" y="0" width="1280" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="150" rx="4" fill="#0284C7"/>
+    <text x="24" y="30" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">1. MULTI-SOURCE ENVIRONMENTAL DATA ACQUISITION</text>
+    <text x="24" y="47" fill="#64748B" font-size="11">Continuous ground station monitoring, gridded atmospheric reanalysis, and spaceborne thermal infrared radiometers.</text>
+    
+    <!-- Source 1: CPCB -->
+    <g transform="translate(24, 60)">
+      <rect x="0" y="0" width="380" height="74" rx="10" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="32" rx="6" fill="#0284C7"/>
+      <text x="28" y="32" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">AQ</text>
+      <text x="56" y="26" fill="#0369A1" font-size="13" font-weight="700">Central Pollution Control Board (CPCB)</text>
+      <text x="56" y="42" fill="#0C4A6E" font-size="11" font-weight="600">Continuous Ambient Air Stations (CAAQMS)</text>
+      <text x="56" y="58" fill="#475569" font-size="10" font-family="'JetBrains Mono', Consolas, monospace">PM2.5 &bull; PM10 &bull; NO2 &bull; O3 &bull; SO2 &bull; CO</text>
+    </g>
+
+    <!-- Source 2: Copernicus ERA5 -->
+    <g transform="translate(450, 60)">
+      <rect x="0" y="0" width="380" height="74" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="32" rx="6" fill="#0D9488"/>
+      <text x="28" y="32" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">WX</text>
+      <text x="56" y="26" fill="#0F766E" font-size="13" font-weight="700">Copernicus ERA5 &bull; NCMRWF NWP</text>
+      <text x="56" y="42" fill="#134E4A" font-size="11" font-weight="600">High-Res Atmospheric &amp; Boundary Layer Dynamics</text>
+      <text x="56" y="58" fill="#475569" font-size="10" font-family="'JetBrains Mono', Consolas, monospace">Temp &bull; Wind U/V &bull; PBL Height &bull; Pressure &bull; Humidity</text>
+    </g>
+
+    <!-- Source 3: NASA FIRMS -->
+    <g transform="translate(876, 60)">
+      <rect x="0" y="0" width="380" height="74" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="32" rx="6" fill="#D97706"/>
+      <text x="28" y="32" fill="#FFFFFF" font-size="13" font-weight="800" text-anchor="middle">FIR</text>
+      <text x="56" y="26" fill="#B45309" font-size="13" font-weight="700">NASA FIRMS Satellite Surveillance</text>
+      <text x="56" y="42" fill="#78350F" font-size="11" font-weight="600">MODIS &amp; VIIRS (375m) Thermal Hotspot Feeds</text>
+      <text x="56" y="58" fill="#475569" font-size="10" font-family="'JetBrains Mono', Consolas, monospace">Lat &bull; Lon &bull; Fire Radiative Power (MW) &bull; Confidence</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 1 -> Layer 2 -->
+  <path d="M 700 310 L 700 345" fill="none" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow-down)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 2: DATA INGESTION & PROCESSING -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 350)">
+    <rect x="0" y="0" width="1280" height="110" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="110" rx="4" fill="#0D9488"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">2. DATA INGESTION, HARMONIZATION &amp; FEATURE PIPELINE (Python Engine)</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Automated validation, spatial interpolation, temporal synchronization, and lag feature creation using Pandas &amp; NumPy.</text>
+    
+    <g transform="translate(24, 56)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="168" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="84" y="19" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Data Collection</text>
+      <text x="84" y="32" fill="#64748B" font-size="9" text-anchor="middle">REST &amp; NetCDF Ingest</text>
+
+      <path d="M 172 21 L 188 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+      <!-- Step 2 -->
+      <rect x="194" y="0" width="168" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="278" y="19" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Validation &amp; Cleaning</text>
+      <text x="278" y="32" fill="#64748B" font-size="9" text-anchor="middle">Range &amp; Sensor Checks</text>
+
+      <path d="M 366 21 L 382 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+      <!-- Step 3 -->
+      <rect x="388" y="0" width="168" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="472" y="19" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Missing Imputation</text>
+      <text x="472" y="32" fill="#64748B" font-size="9" text-anchor="middle">Kriging &amp; Spline Fill</text>
+
+      <path d="M 560 21 L 576 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+      <!-- Step 4 -->
+      <rect x="582" y="0" width="168" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="666" y="19" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Spatial Alignment</text>
+      <text x="666" y="32" fill="#64748B" font-size="9" text-anchor="middle">Delhi NCR 0.25° Grid</text>
+
+      <path d="M 754 21 L 770 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+      <!-- Step 5 -->
+      <rect x="776" y="0" width="168" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="860" y="19" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Temporal Sync</text>
+      <text x="860" y="32" fill="#64748B" font-size="9" text-anchor="middle">Hourly Unified Index</text>
+
+      <path d="M 948 21 L 964 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-teal)"/>
+
+      <!-- Step 6 -->
+      <rect x="970" y="0" width="260" height="42" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+      <text x="1100" y="19" fill="#065F46" font-size="11" font-weight="700" text-anchor="middle">Feature Engineering</text>
+      <text x="1100" y="32" fill="#047857" font-size="9" text-anchor="middle">VI, Lapse Rate, Stagnation &amp; Lag L{1..24}</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 2 -> Layer 3 -->
+  <path d="M 700 460 L 700 495" fill="none" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 3: DATA STORAGE (PostgreSQL + PostGIS) -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 500)">
+    <rect x="0" y="0" width="1280" height="95" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="95" rx="4" fill="#3B82F6"/>
+    <text x="24" y="26" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">3. ENTERPRISE SPATIAL &amp; TEMPORAL DATA STORAGE</text>
+    <text x="24" y="42" fill="#64748B" font-size="11">High-performance relational repository with PostGIS spatial extensions and SQLite zero-dependency local execution mode.</text>
+    
+    <g transform="translate(24, 52)">
+      <rect x="0" y="0" width="195" height="32" rx="6" fill="#F1F5F9"/>
+      <text x="97" y="20" fill="#334155" font-size="10" font-weight="700" text-anchor="middle">Air Quality Time-Series</text>
+
+      <rect x="207" y="0" width="195" height="32" rx="6" fill="#F1F5F9"/>
+      <text x="304" y="20" fill="#334155" font-size="10" font-weight="700" text-anchor="middle">Meteorology &amp; Soundings</text>
+
+      <rect x="414" y="0" width="195" height="32" rx="6" fill="#F1F5F9"/>
+      <text x="511" y="20" fill="#334155" font-size="10" font-weight="700" text-anchor="middle">FIRMS Thermal Hotspots</text>
+
+      <rect x="621" y="0" width="195" height="32" rx="6" fill="#F1F5F9"/>
+      <text x="718" y="20" fill="#334155" font-size="10" font-weight="700" text-anchor="middle">Plume Cones &amp; Vectors</text>
+
+      <rect x="828" y="0" width="195" height="32" rx="6" fill="#F1F5F9"/>
+      <text x="925" y="20" fill="#334155" font-size="10" font-weight="700" text-anchor="middle">Inversion Sounding Layers</text>
+
+      <rect x="1035" y="0" width="195" height="32" rx="6" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+      <text x="1132" y="20" fill="#1D4ED8" font-size="10" font-weight="700" text-anchor="middle">PostgreSQL + PostGIS</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 3 -> Layer 4 -->
+  <path d="M 700 595 L 700 630" fill="none" stroke="#3B82F6" stroke-width="2.5" marker-end="url(#arrow-down)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 4: COUPLED ATMOSPHERIC & DIAGNOSTIC ANALYSIS -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 635)">
+    <rect x="0" y="0" width="1280" height="285" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="285" rx="4" fill="#8B5CF6"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">4. COUPLED ATMOSPHERIC DIAGNOSTICS &amp; PHYSICAL FEEDBACK MECHANISMS</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Two-way meteorological-chemical interactions, boundary layer capping, advective plume reach, and agricultural burning likelihood.</text>
+
+    <!-- Block 4A: Weather-Pollution Coupling -->
+    <g transform="translate(24, 60)">
+      <rect x="0" y="0" width="300" height="205" rx="10" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#5B21B6" font-size="12" font-weight="800">Two-Way Coupling Dynamics</text>
+      
+      <!-- Forward -->
+      <rect x="12" y="36" width="276" height="66" rx="6" fill="#FFFFFF" stroke="#E9D5FF"/>
+      <text x="22" y="52" fill="#6D28D9" font-size="10" font-weight="700">Weather &rarr; Pollution (Stagnation)</text>
+      <text x="22" y="68" fill="#4B5563" font-size="9">&bull; Low wind velocity (&lt;2 m/s) restricts advection</text>
+      <text x="22" y="82" fill="#4B5563" font-size="9">&bull; Low PBL depth (&lt;400m) shrinks dilution volume</text>
+      <text x="22" y="96" fill="#4B5563" font-size="9">&bull; Stable stratification shuts down vertical venting</text>
+
+      <!-- Reverse -->
+      <rect x="12" y="112" width="276" height="82" rx="6" fill="#FFFFFF" stroke="#E9D5FF"/>
+      <text x="22" y="128" fill="#6D28D9" font-size="10" font-weight="700">Pollution &rarr; Weather (Radiative Feedback)</text>
+      <text x="22" y="144" fill="#4B5563" font-size="9">&bull; Aerosol optical depth causes solar dimming (-45 W/m²)</text>
+      <text x="22" y="158" fill="#4B5563" font-size="9">&bull; Reduced surface sensible heat suppresses daytime PBL</text>
+      <text x="22" y="172" fill="#4B5563" font-size="9">&bull; Self-amplifying positive feedback loop locks PM2.5</text>
+      <text x="22" y="186" fill="#9333EA" font-size="9" font-weight="700">&bull; Result: Severe Near-Surface Compression</text>
+    </g>
+
+    <!-- Block 4B: Inversion Analysis -->
+    <g transform="translate(340, 60)">
+      <rect x="0" y="0" width="220" height="205" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#991B1B" font-size="12" font-weight="800">Inversion Sounding</text>
+      <text x="14" y="40" fill="#7F1D1D" font-size="10">Vertical Profile: dT/dz &gt; 0</text>
+      
+      <rect x="12" y="52" width="196" height="142" rx="6" fill="#FFFFFF" stroke="#FEE2E2"/>
+      <text x="20" y="72" fill="#991B1B" font-size="10" font-weight="700">Sounding Detection:</text>
+      <text x="20" y="90" fill="#475569" font-size="9">&bull; Inversion Base Height (m)</text>
+      <text x="20" y="106" fill="#475569" font-size="9">&bull; Inversion Top Height (m)</text>
+      <text x="20" y="122" fill="#475569" font-size="9">&bull; Layer Temperature Jump (&Delta;T)</text>
+      <text x="20" y="142" fill="#991B1B" font-size="10" font-weight="700">Classification:</text>
+      <text x="20" y="160" fill="#DC2626" font-size="9" font-weight="600">&bull; Weak | Moderate | Strong</text>
+      <text x="20" y="178" fill="#B91C1C" font-size="9" font-weight="700">&bull; Trapping Risk: Severe</text>
+    </g>
+
+    <!-- Block 4C: Dispersion Analysis -->
+    <g transform="translate(576, 60)">
+      <rect x="0" y="0" width="220" height="205" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#166534" font-size="12" font-weight="800">Dispersion Analysis</text>
+      <text x="14" y="40" fill="#14532D" font-size="10">Ventilation Index Evaluation</text>
+      
+      <rect x="12" y="52" width="196" height="142" rx="6" fill="#FFFFFF" stroke="#DCFCE7"/>
+      <text x="20" y="72" fill="#166534" font-size="10" font-weight="700">Ventilation Metric:</text>
+      <text x="20" y="90" fill="#15803D" font-size="9" font-family="'JetBrains Mono', Consolas, monospace">VI = PBLH &times; WindSpeed</text>
+      <text x="20" y="106" fill="#475569" font-size="9">&bull; Pasquill-Gifford Class A&ndash;F</text>
+      <text x="20" y="126" fill="#166534" font-size="10" font-weight="700">Dispersion Regimes:</text>
+      <text x="20" y="144" fill="#475569" font-size="9">&bull; High (&gt;6000 m²/s)</text>
+      <text x="20" y="160" fill="#D97706" font-size="9">&bull; Moderate (2000&ndash;6000)</text>
+      <text x="20" y="178" fill="#DC2626" font-size="9" font-weight="700">&bull; Low (&lt;2000): High Risk</text>
+    </g>
+
+    <!-- Block 4D: Fire Hotspot & Agri Likelihood -->
+    <g transform="translate(812, 60)">
+      <rect x="0" y="0" width="224" height="205" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#B45309" font-size="12" font-weight="800">Fire &amp; Stubble Detection</text>
+      <text x="14" y="40" fill="#92400E" font-size="10">Analytical Inference Heuristic</text>
+      
+      <rect x="12" y="52" width="200" height="142" rx="6" fill="#FFFFFF" stroke="#FEF3C7"/>
+      <text x="20" y="72" fill="#B45309" font-size="10" font-weight="700">Contextual Ingestion:</text>
+      <text x="20" y="88" fill="#475569" font-size="9">&bull; Spatial Crop Mask (NW India)</text>
+      <text x="20" y="104" fill="#475569" font-size="9">&bull; Harvesting Calendar Window</text>
+      <text x="20" y="120" fill="#475569" font-size="9">&bull; FRP &amp; Spatial Clustering</text>
+      <text x="20" y="142" fill="#B45309" font-size="10" font-weight="700">Output Attribution:</text>
+      <text x="20" y="160" fill="#D97706" font-size="9" font-weight="700">&bull; Agri-Burning Likelihood (%)</text>
+      <text x="20" y="178" fill="#78350F" font-size="8.5" font-style="italic">*Analytical Inference Tag</text>
+    </g>
+
+    <!-- Block 4E: Smoke Plume Prediction -->
+    <g transform="translate(1052, 60)">
+      <rect x="0" y="0" width="204" height="205" rx="10" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#C2410C" font-size="12" font-weight="800">Smoke Plume Prediction</text>
+      <text x="14" y="40" fill="#9A3412" font-size="10">Advective Trajectory Cone</text>
+      
+      <rect x="12" y="52" width="180" height="142" rx="6" fill="#FFFFFF" stroke="#FFEDD5"/>
+      <text x="18" y="72" fill="#C2410C" font-size="10" font-weight="700">Transport Inputs:</text>
+      <text x="18" y="88" fill="#475569" font-size="9">&bull; Fire Origin Lat / Lon</text>
+      <text x="18" y="104" fill="#475569" font-size="9">&bull; Wind Velocity &amp; Bearing</text>
+      <text x="18" y="120" fill="#475569" font-size="9">&bull; Stability &amp; PBL Height</text>
+      <text x="18" y="142" fill="#C2410C" font-size="10" font-weight="700">Model Outputs:</text>
+      <text x="18" y="160" fill="#EA580C" font-size="9" font-weight="700">&bull; Plume Reach (km) &amp; Bearing</text>
+      <text x="18" y="178" fill="#7C2D12" font-size="8.5" font-style="italic">&bull; NCR Impact % (MODEL EST.)</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 4 -> Layer 5 -->
+  <path d="M 700 920 L 700 965" fill="none" stroke="#0284C7" stroke-width="3" marker-end="url(#arrow-down)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 5: AI / ML COUPLED FORECASTING ENGINE (HIGHLIGHTED) -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 975)">
+    <!-- Main Highlighted Core Box -->
+    <rect x="0" y="0" width="1280" height="240" rx="18" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5" filter="url(#core-shadow)"/>
+    <rect x="0" y="0" width="1280" height="42" rx="16" fill="url(#core-grad)"/>
+    <text x="30" y="27" fill="#FFFFFF" font-size="16" font-weight="800" letter-spacing="0.8">5. AI / ML COUPLED FORECASTING ENGINE (CENTRAL PREDICTION CORE)</text>
+    <text x="1050" y="26" fill="#BAE6FD" font-size="11" font-weight="700">POLLUTANT-FIRST REGRESSION</text>
+
+    <!-- Sub-Columns in AI/ML Core -->
+    <!-- Input Feature Matrix -->
+    <g transform="translate(30, 60)">
+      <rect x="0" y="0" width="340" height="155" rx="10" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#0369A1" font-size="12" font-weight="700">Coupled Feature Input Vector [X]</text>
+      
+      <g transform="translate(16, 38)" fill="#334155" font-size="10">
+        <text x="0" y="14">&bull; Lagged Pollutants: PM2.5(t-1..24), PM10, NO2, O3</text>
+        <text x="0" y="32">&bull; Boundary Dynamics: PBL Height, Stability Class</text>
+        <text x="0" y="50">&bull; Wind Components: U-Wind, V-Wind, Surface Calm%</text>
+        <text x="0" y="68">&bull; Thermal Sounding: Inversion Base &amp; Layer Jump</text>
+        <text x="0" y="86">&bull; Regional Forcing: Upwind Fire Index &amp; Plume Cones</text>
+        <text x="0" y="104">&bull; Temporal Encoding: Hour, Day of Week, Season Window</text>
+      </g>
+    </g>
+
+    <path d="M 380 135 L 430 135" fill="none" stroke="#0284C7" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+    <!-- Model Ensemble Architecture -->
+    <g transform="translate(440, 60)">
+      <rect x="0" y="0" width="400" height="155" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#0F172A" font-size="12" font-weight="800">Model Architecture &amp; Ensemble Algorithms</text>
+
+      <g transform="translate(16, 38)">
+        <rect x="0" y="0" width="112" height="100" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+        <text x="56" y="22" fill="#0284C7" font-size="11" font-weight="800" text-anchor="middle">XGBoost</text>
+        <text x="56" y="38" fill="#475569" font-size="9" text-anchor="middle">Gradient Boosted</text>
+        <text x="56" y="52" fill="#475569" font-size="9" text-anchor="middle">Decision Trees</text>
+        <rect x="14" y="66" width="84" height="20" rx="4" fill="#E0F2FE"/>
+        <text x="56" y="80" fill="#0369A1" font-size="8.5" font-weight="700" text-anchor="middle">Non-linear Tabular</text>
+
+        <rect x="126" y="0" width="112" height="100" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+        <text x="182" y="22" fill="#0D9488" font-size="11" font-weight="800" text-anchor="middle">Random Forest</text>
+        <text x="182" y="38" fill="#475569" font-size="9" text-anchor="middle">Bagged Stagnation</text>
+        <text x="182" y="52" fill="#475569" font-size="9" text-anchor="middle">Regressors</text>
+        <rect x="140" y="66" width="84" height="20" rx="4" fill="#CCFBF1"/>
+        <text x="182" y="80" fill="#0F766E" font-size="8.5" font-weight="700" text-anchor="middle">High Robustness</text>
+
+        <rect x="252" y="0" width="116" height="100" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+        <text x="310" y="22" fill="#4338CA" font-size="11" font-weight="800" text-anchor="middle">Bi-LSTM</text>
+        <text x="310" y="38" fill="#475569" font-size="9" text-anchor="middle">Recurrent Neural</text>
+        <text x="310" y="52" fill="#475569" font-size="9" text-anchor="middle">Sequence Model</text>
+        <rect x="268" y="66" width="84" height="20" rx="4" fill="#EEF2FF"/>
+        <text x="310" y="80" fill="#3730A3" font-size="8.5" font-weight="700" text-anchor="middle">Diurnal Memory</text>
+      </g>
+    </g>
+
+    <path d="M 850 135 L 900 135" fill="none" stroke="#0284C7" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+    <!-- Predicted Outputs & Horizon -->
+    <g transform="translate(910, 60)">
+      <rect x="0" y="0" width="340" height="155" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#065F46" font-size="12" font-weight="800">Predicted Pollutant Concentrations [&Ycirc;]</text>
+      
+      <g transform="translate(16, 38)">
+        <rect x="0" y="0" width="94" height="60" rx="6" fill="#FFFFFF" stroke="#6EE7B7"/>
+        <text x="47" y="20" fill="#047857" font-size="11" font-weight="800" text-anchor="middle">+24 Hours</text>
+        <text x="47" y="36" fill="#64748B" font-size="9" text-anchor="middle">Nocturnal Peak</text>
+        <text x="47" y="50" fill="#0F172A" font-size="9" font-weight="700" text-anchor="middle">PM2.5 &amp; PM10</text>
+
+        <rect x="106" y="0" width="94" height="60" rx="6" fill="#FFFFFF" stroke="#6EE7B7"/>
+        <text x="153" y="20" fill="#047857" font-size="11" font-weight="800" text-anchor="middle">+48 Hours</text>
+        <text x="153" y="36" fill="#64748B" font-size="9" text-anchor="middle">Plume Incursion</text>
+        <text x="153" y="50" fill="#0F172A" font-size="9" font-weight="700" text-anchor="middle">NO2 &amp; Ozone</text>
+
+        <rect x="212" y="0" width="94" height="60" rx="6" fill="#FFFFFF" stroke="#6EE7B7"/>
+        <text x="259" y="20" fill="#047857" font-size="11" font-weight="800" text-anchor="middle">+72 Hours</text>
+        <text x="259" y="36" fill="#64748B" font-size="9" text-anchor="middle">Ventilation Relief</text>
+        <text x="259" y="50" fill="#0F172A" font-size="9" font-weight="700" text-anchor="middle">95% CI Interval</text>
+
+        <text x="0" y="85" fill="#065F46" font-size="10" font-weight="700">&bull; Predicts mass concentrations first (µg/m³)</text>
+        <text x="0" y="102" fill="#047857" font-size="9.5">&bull; Strict non-negative physical boundary constraints</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 5 -> Layer 6 -->
+  <path d="M 700 1215 L 700 1250" fill="none" stroke="#059669" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 6: CPCB AQI CALCULATION -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 1255)">
+    <rect x="0" y="0" width="1280" height="110" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="110" rx="4" fill="#10B981"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">6. OFFICIAL CPCB NATIONAL AIR QUALITY INDEX (NAQI) CALCULATION</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Standard Indian piecewise linear sub-index conversion (Not directly derived from weather; strictly pollutant-driven).</text>
+    
+    <g transform="translate(24, 56)">
+      <!-- Input -->
+      <rect x="0" y="0" width="220" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="110" y="18" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Predicted Pollutants</text>
+      <text x="110" y="32" fill="#64748B" font-size="9" text-anchor="middle">C_p (PM2.5, PM10, NO2, O3)</text>
+
+      <path d="M 228 21 L 248 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+      <!-- Formula -->
+      <rect x="256" y="0" width="390" height="42" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="451" y="18" fill="#166534" font-size="11" font-weight="700" text-anchor="middle">Piecewise Linear Sub-Index Equation</text>
+      <text x="451" y="32" fill="#15803D" font-size="9" font-family="'JetBrains Mono', Consolas, monospace" text-anchor="middle">Ip = I_low + [(I_high - I_low) / (B_high - B_low)] &times; (Cp - B_low)</text>
+
+      <path d="M 654 21 L 674 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+      <!-- Max Rule -->
+      <rect x="682" y="0" width="180" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="772" y="18" fill="#0F172A" font-size="11" font-weight="700" text-anchor="middle">Maximum Sub-Index</text>
+      <text x="772" y="32" fill="#64748B" font-size="9" text-anchor="middle">Overall AQI = max(I_p1..p8)</text>
+
+      <path d="M 870 21 L 890 21" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+      <!-- Category Spectrum -->
+      <g transform="translate(898, 0)">
+        <rect x="0" y="0" width="330" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <g transform="translate(10, 8)" font-size="9" font-weight="700">
+          <rect x="0" y="0" width="48" height="26" rx="4" fill="#10B981"/>
+          <text x="24" y="16" fill="#FFF" text-anchor="middle">0-50</text>
+          
+          <rect x="52" y="0" width="48" height="26" rx="4" fill="#84CC16"/>
+          <text x="76" y="16" fill="#FFF" text-anchor="middle">51-100</text>
+          
+          <rect x="104" y="0" width="48" height="26" rx="4" fill="#F59E0B"/>
+          <text x="128" y="16" fill="#FFF" text-anchor="middle">101-200</text>
+          
+          <rect x="156" y="0" width="48" height="26" rx="4" fill="#F97316"/>
+          <text x="180" y="16" fill="#FFF" text-anchor="middle">201-300</text>
+          
+          <rect x="208" y="0" width="48" height="26" rx="4" fill="#EF4444"/>
+          <text x="232" y="16" fill="#FFF" text-anchor="middle">301-400</text>
+          
+          <rect x="260" y="0" width="48" height="26" rx="4" fill="#7F1D1D"/>
+          <text x="284" y="16" fill="#FFF" text-anchor="middle">401-500</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 6 -> Layer 7 -->
+  <path d="M 700 1365 L 700 1400" fill="none" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 7: APPLICATION SERVICES & FASTAPI BACKEND -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 1405)">
+    <rect x="0" y="0" width="1280" height="135" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="135" rx="4" fill="#0284C7"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">7. APPLICATION SERVICES &amp; FASTAPI REST API BACKEND</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Modular micro-service architecture implementing endpoints with JWT security, Pydantic validation, and CORS middleware.</text>
+
+    <g transform="translate(24, 58)" font-size="10" font-weight="700">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="190" height="30" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="95" y="19" fill="#0369A1" text-anchor="middle">GET /api/aqi/current</text>
+
+      <rect x="206" y="0" width="190" height="30" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="301" y="19" fill="#0369A1" text-anchor="middle">GET /api/aqi/forecast</text>
+
+      <rect x="412" y="0" width="190" height="30" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="507" y="19" fill="#0369A1" text-anchor="middle">GET /api/weather/current</text>
+
+      <rect x="618" y="0" width="190" height="30" rx="6" fill="#F5F3FF" stroke="#DDD6FE"/>
+      <text x="713" y="19" fill="#6D28D9" text-anchor="middle">POST /api/coupling/simulate</text>
+
+      <rect x="824" y="0" width="190" height="30" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="919" y="19" fill="#B91C1C" text-anchor="middle">GET /api/inversion</text>
+
+      <rect x="1030" y="0" width="198" height="30" rx="6" fill="#FFFBEB" stroke="#FDE68A"/>
+      <text x="1129" y="19" fill="#B45309" text-anchor="middle">GET /api/fire-hotspots</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="38" width="190" height="30" rx="6" fill="#FFF7ED" stroke="#FED7AA"/>
+      <text x="95" y="57" fill="#C2410C" text-anchor="middle">GET /api/plume</text>
+
+      <rect x="206" y="38" width="190" height="30" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+      <text x="301" y="57" fill="#15803D" text-anchor="middle">GET /api/dispersion</text>
+
+      <rect x="412" y="38" width="190" height="30" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="507" y="57" fill="#334155" text-anchor="middle">GET /api/analysis</text>
+
+      <rect x="618" y="38" width="190" height="30" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="713" y="57" fill="#0369A1" text-anchor="middle">POST /api/chat</text>
+
+      <rect x="824" y="38" width="190" height="30" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="919" y="57" fill="#B91C1C" text-anchor="middle">GET /api/alerts</text>
+
+      <rect x="1030" y="38" width="198" height="30" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="1129" y="57" fill="#334155" text-anchor="middle">POST /api/auth/login</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector: Layer 7 -> Layer 8 -->
+  <path d="M 700 1540 L 700 1575" fill="none" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow-down)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 8: WEB DASHBOARD & USER INTERFACE -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 1580)">
+    <rect x="0" y="0" width="1280" height="245" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="245" rx="4" fill="#0F3F7A"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">8. SCIENTIFIC PRESENTATION DASHBOARD &amp; CLIENT-SIDE PLATFORM</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Responsive, component-driven UI built with React.js, Tailwind CSS, Leaflet Maps, and Recharts visualization suite.</text>
+
+    <!-- 15 Functional Modules Grid -->
+    <g transform="translate(24, 60)" font-size="10" font-weight="700">
+      <!-- Col 1 -->
+      <rect x="0" y="0" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="12" y="20" fill="#0F172A">1. Executive Dashboard</text>
+
+      <rect x="0" y="40" width="236" height="32" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="12" y="60" fill="#0369A1">2. Interactive Leaflet AQI Map</text>
+
+      <rect x="0" y="80" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="12" y="100" fill="#0F172A">3. 72-Hour Horizon Forecast</text>
+
+      <rect x="0" y="120" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="12" y="140" fill="#0F172A">4. Weather Dynamics Deep Dive</text>
+
+      <!-- Col 2 -->
+      <rect x="254" y="0" width="236" height="32" rx="6" fill="#F5F3FF" stroke="#DDD6FE"/>
+      <text x="266" y="20" fill="#6D28D9">5. Coupling Simulation Lab</text>
+
+      <rect x="254" y="40" width="236" height="32" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="266" y="60" fill="#B91C1C">6. Inversion Sounding Monitor</text>
+
+      <rect x="254" y="80" width="236" height="32" rx="6" fill="#FFFBEB" stroke="#FDE68A"/>
+      <text x="266" y="100" fill="#B45309">7. NASA FIRMS Fire Detection</text>
+
+      <rect x="254" y="120" width="236" height="32" rx="6" fill="#FFF7ED" stroke="#FED7AA"/>
+      <text x="266" y="140" fill="#C2410C">8. Plume Trajectory Estimator</text>
+
+      <!-- Col 3 -->
+      <rect x="508" y="0" width="236" height="32" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+      <text x="520" y="20" fill="#15803D">9. Dispersion &amp; Ventilation</text>
+
+      <rect x="508" y="40" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="520" y="60" fill="#0F172A">10. Diagnostic Insights &amp; Why</text>
+
+      <rect x="508" y="80" width="236" height="32" rx="6" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="520" y="100" fill="#0284C7">11. Grounded AI Chatbot</text>
+
+      <rect x="508" y="120" width="236" height="32" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="520" y="140" fill="#DC2626">12. Hazard Alert Management</text>
+
+      <!-- Col 4 -->
+      <rect x="762" y="0" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="774" y="20" fill="#0F172A">13. Historical Episode Compare</text>
+
+      <rect x="762" y="40" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="774" y="60" fill="#0F172A">14. Data Source Status</text>
+
+      <rect x="762" y="80" width="236" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="774" y="100" fill="#0F172A">15. User Profile &amp; Settings</text>
+
+      <rect x="762" y="120" width="236" height="32" rx="6" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="774" y="140" fill="#475569">16. Security &amp; JWT Auth</text>
+
+      <!-- Col 5 (Tech Stack Highlight Box) -->
+      <g transform="translate(1016, 0)">
+        <rect x="0" y="0" width="216" height="152" rx="8" fill="#0F172A"/>
+        <text x="16" y="24" fill="#38BDF8" font-size="11" font-weight="800">Frontend Technology</text>
+        <text x="16" y="48" fill="#F8FAFC" font-size="10">&bull; React 18 + Vite Bundler</text>
+        <text x="16" y="68" fill="#F8FAFC" font-size="10">&bull; Tailwind CSS Scientific</text>
+        <text x="16" y="88" fill="#F8FAFC" font-size="10">&bull; Leaflet &amp; React-Leaflet</text>
+        <text x="16" y="108" fill="#F8FAFC" font-size="10">&bull; Recharts Data Visuals</text>
+        <text x="16" y="128" fill="#F8FAFC" font-size="10">&bull; Lucide Environmental Icons</text>
+      </g>
+    </g>
+
+    <!-- Bottom Highlights -->
+    <text x="24" y="230" fill="#64748B" font-size="10.5">
+      &bull; 11 Delhi NCR Stations &bull; Interactive Sliders &bull; Centralized Calibrated Demo Layer &bull; Zero Dead Buttons &bull; 100% Functional Routing
+    </text>
+  </g>
+
+  <!-- Flow Connector: Layer 8 -> Layer 9 -->
+  <path d="M 700 1825 L 700 1860" fill="none" stroke="#0F3F7A" stroke-width="2.5" marker-end="url(#arrow-down)"/>
+
+  <!-- ======================================================== -->
+  <!-- LAYER 9: USER INTERACTION & STAKEHOLDERS -->
+  <!-- ======================================================== -->
+  <g transform="translate(60, 1865)">
+    <rect x="0" y="0" width="1280" height="155" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="8" height="155" rx="4" fill="#059669"/>
+    <text x="24" y="28" fill="#0F3F7A" font-size="15" font-weight="800" letter-spacing="0.5">9. END USERS, SCIENTIFIC RESEARCHERS &amp; INSTITUTIONAL DECISION MAKERS</text>
+    <text x="24" y="44" fill="#64748B" font-size="11">Empowering stakeholders with actionable foresight: WHAT is happening, WHY it happens, and WHAT to expect in 72 hours.</text>
+
+    <!-- Stakeholder Cards -->
+    <g transform="translate(24, 60)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="380" height="74" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+      <text x="16" y="24" fill="#065F46" font-size="12" font-weight="800">MoES / NCMRWF Scientists</text>
+      <text x="16" y="42" fill="#047857" font-size="10">Evaluate coupled numerical model performance</text>
+      <text x="16" y="58" fill="#475569" font-size="9.5">Soundings &bull; Radiative Feedback &bull; Plume Cones</text>
+
+      <!-- Box 2 -->
+      <rect x="420" y="0" width="380" height="74" rx="8" fill="#F0F9FF" stroke="#BAE6FD"/>
+      <text x="16" y="24" fill="#0369A1" font-size="12" font-weight="800">Environmental Regulators (CPCB/CAQM)</text>
+      <text x="16" y="42" fill="#0284C7" font-size="10">Targeted mitigation &amp; GRAP intervention triggers</text>
+      <text x="16" y="58" fill="#475569" font-size="9.5">Source Apportionment &bull; Stagnation Warnings &bull; Alerts</text>
+
+      <!-- Box 3 -->
+      <rect x="840" y="0" width="388" height="74" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+      <text x="16" y="24" fill="#B45309" font-size="12" font-weight="800">Citizens &amp; Sensitive Demographics</text>
+      <text x="16" y="42" fill="#92400E" font-size="10">Preventative healthcare &amp; exposure minimization</text>
+      <text x="16" y="58" fill="#475569" font-size="9.5">72H Forecast &bull; Health Advisories &bull; AI Natural Chatbot</text>
+    </g>
+  </g>
+
+  <!-- Footer Tag -->
+  <text x="700" y="2120" fill="#94A3B8" font-size="11" font-weight="600" text-anchor="middle">
+    Air Pollution–Weather Coupled Forecasting System (Delhi NCR Focus) &bull; Ministry of Earth Sciences &bull; SIH26082 Academic Architecture
+  </text>
+</svg>
